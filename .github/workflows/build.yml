@@ -3,7 +3,6 @@ name: Java CI
 on: [ push ]
 jobs:
   strategy:
-    runs-on:
     matrix:
       os: [ 'ubuntu-latest', 'windows-latest']
   runs-on: ${{ matrix.os }}
